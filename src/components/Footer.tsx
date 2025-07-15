@@ -1,5 +1,5 @@
 import { Smartphone, Download, Mail, MapPin, Phone } from 'lucide-react';
-import scrappLogo from '@/assets/scrapp-logo.png';
+import zfLogo from '@/assets/zf-logo.png';
 
 const Footer = () => {
   return (
@@ -12,14 +12,14 @@ const Footer = () => {
             <div className="lg:col-span-2">
               <div className="flex items-center space-x-2 mb-6">
                 <img 
-                  src={scrappLogo} 
+                  src={zfLogo} 
                   alt="Scrapp Logo" 
-                  className="h-8 w-auto filter brightness-0 invert"
+                  className="h-8 w-8 filter brightness-0 invert"
                 />
                 <span className="text-2xl font-bold text-app-highlight">Scrapp</span>
               </div>
               <p className="text-background/80 mb-6 max-w-md">
-                Transforming the way businesses and people achieve their zero-waste goals through innovative technology and sustainable practices.
+                Transforming the way businesses and people achieve their zero-waste goals.
               </p>
               
               {/* App Download Buttons */}
@@ -68,12 +68,13 @@ const Footer = () => {
 
             {/* Services & Contact */}
             <div>
-              <h3 className="text-lg font-semibold mb-4 text-app-highlight">Services</h3>
+              <h3 className="text-lg font-semibold mb-4 text-app-highlight">Products</h3>
               <ul className="space-y-3 mb-6">
                 <li><a href="#business" className="text-background/80 hover:text-background transition-colors">For Business</a></li>
-                <li><a href="#individuals" className="text-background/80 hover:text-background transition-colors">For Individuals</a></li>
-                <li><a href="#retailers" className="text-background/80 hover:text-background transition-colors">For Retailers</a></li>
+                <li><a href="#brands-retailers" className="text-background/80 hover:text-background transition-colors">For Brands & Retailers</a></li>
                 <li><a href="#suppliers" className="text-background/80 hover:text-background transition-colors">For Suppliers</a></li>
+                <li><a href="#individuals" className="text-background/80 hover:text-background transition-colors">For Individuals</a></li>
+                <li><a href="#zero-waste" className="text-background/80 hover:text-background transition-colors">Zero-Waste Champions Program</a></li>
               </ul>
 
               <h3 className="text-lg font-semibold mb-4 text-app-highlight">Contact</h3>
