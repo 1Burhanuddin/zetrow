@@ -9,34 +9,53 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
+    --foreground: 0 0% 9%;
+    
+    /* Scrapp Design System - Main Brand Colors */
+    --app-bar-highlight: 174 100% 50%; /* #00FEC4 */
+    --primary: 168 70% 47%; /* #27D5AC */
+    --secondary: 215 70% 55%; /* #2F86DE */
+    --green-bg: 101 48% 57%; /* #75C45B */
+    --accent-yellow: 45 89% 44%; /* #E1B81F */
+    --tag-background: 45 71% 89%; /* #F6EDCE */
+    
+    /* Supporting Colors */
+    --success: 165 100% 33%; /* #00A679 */
+    --success-light: 174 99% 50%; /* #01FEBA */
+    --success-bright: 146 100% 51%; /* #03FF98 */
+    --muted-gray: 0 0% 48%; /* #7B7B7B */
+    
+    /* Semantic Colors */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
+    --card-foreground: 0 0% 9%;
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
+    --popover-foreground: 0 0% 9%;
+    --primary-foreground: 0 0% 100%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+    --accent: 174 100% 50%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 168 70% 47%;
+    --radius: 0.75rem;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--app-bar-highlight)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--green-bg)), hsl(var(--primary)));
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)) 0%, hsl(var(--muted)) 100%);
+    
+    /* Shadows */
+    --shadow-soft: 0 4px 16px -4px hsl(var(--primary) / 0.1);
+    --shadow-medium: 0 8px 24px -8px hsl(var(--primary) / 0.15);
+    --shadow-strong: 0 16px 32px -8px hsl(var(--primary) / 0.2);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --sidebar-background: 0 0% 98%;
 
