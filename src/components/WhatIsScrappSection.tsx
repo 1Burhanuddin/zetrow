@@ -2,17 +2,17 @@ import whatIsScrappIllustration from '@/assets/what-is-scrapp-illustration.png';
 
 const WhatIsScrappSection = () => {
   return (
-    <section className="pt-24 pb-16 lg:py-24 bg-background">
+    <section className="pt-20 pb-16 lg:py-24 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-12 lg:items-center">
           {/* Text Content */}
-          <div className="order-2 lg:order-1 lg:pr-8">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground mb-6 lg:mb-8">
+          <div className="lg:pr-8">
+            <h2 className="text-3xl sm:text-4xl lg:text-4xl xl:text-5xl font-bold text-foreground mb-6 lg:mb-8 text-left">
               What is<br />
               <span className="text-primary">Scrapp?</span>
             </h2>
             
-            <div className="space-y-4 lg:space-y-6 text-sm sm:text-base lg:text-lg text-muted-foreground leading-relaxed">
+            <div className="space-y-4 lg:space-y-6 text-base lg:text-lg text-muted-foreground leading-relaxed text-left">
               <p>
                 Scrapp develops smart waste programs for businesses, brands & 
                 retailers aiming to transition to zero waste. Through a 
@@ -30,11 +30,11 @@ const WhatIsScrappSection = () => {
           </div>
 
           {/* Illustration */}
-          <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
+          <div className="flex justify-center lg:justify-end mt-8 lg:mt-0">
             <img 
               src={whatIsScrappIllustration} 
               alt="Waste management illustration" 
-              className="w-full max-w-xs sm:max-w-sm lg:max-w-md xl:max-w-lg animate-fade-in"
+              className="w-full max-w-sm sm:max-w-md lg:max-w-lg animate-fade-in"
             />
           </div>
         </div>
