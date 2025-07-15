@@ -17,10 +17,10 @@ const Header = () => {
           <div className="flex items-center space-x-2">
             <img 
               src={zfLogo} 
-              alt="Scrapp Logo" 
+              alt="zetrow Logo" 
               className="h-8 w-8"
             />
-            <span className="text-xl font-bold text-primary">Scrapp</span>
+            <span className="text-xl font-bold text-primary">zetrow</span>
           </div>
 
           {/* Desktop Navigation */}

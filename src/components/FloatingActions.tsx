@@ -4,7 +4,7 @@ const FloatingActions = () => {
   const handleWhatsAppClick = () => {
     // Replace with actual WhatsApp business number
     const phoneNumber = '+1234567890';
-    const message = 'Hi! I\'m interested in learning more about Scrapp\'s services.';
+    const message = 'Hi! I\'m interested in learning more about zetrow\'s services.';
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
@@ -19,8 +19,7 @@ const FloatingActions = () => {
       {/* WhatsApp Button */}
       <button
         onClick={handleWhatsAppClick}
-        className="group bg-[#25D366] hover:bg-[#20C157] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-strong hover:shadow-xl transition-all duration-300 hover:scale-110 animate-float"
-        style={{animationDelay: '0s'}}
+        className="group bg-[#25D366] hover:bg-[#20C157] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-strong hover:shadow-xl transition-all duration-300 hover:scale-110"
         aria-label="Chat on WhatsApp"
       >
         <MessageCircle className="h-6 w-6 group-hover:scale-110 transition-transform" />
@@ -29,8 +28,7 @@ const FloatingActions = () => {
       {/* Call Button */}
       <button
         onClick={handleCallClick}
-        className="group bg-secondary hover:bg-secondary/90 text-secondary-foreground w-14 h-14 rounded-full flex items-center justify-center shadow-strong hover:shadow-xl transition-all duration-300 hover:scale-110 animate-float"
-        style={{animationDelay: '0.5s'}}
+        className="group bg-secondary hover:bg-secondary/90 text-secondary-foreground w-14 h-14 rounded-full flex items-center justify-center shadow-strong hover:shadow-xl transition-all duration-300 hover:scale-110"
         aria-label="Call us"
       >
         <Phone className="h-6 w-6 group-hover:scale-110 transition-transform" />

@@ -9,20 +9,20 @@ const WhatIsScrappSection = () => {
           <div className="lg:pr-8">
             <h2 className="text-3xl sm:text-4xl lg:text-4xl xl:text-5xl font-bold text-foreground mb-6 lg:mb-8 text-left">
               What is<br />
-              <span className="text-primary">Scrapp?</span>
+              <span className="text-primary">zetrow?</span>
             </h2>
             
             <div className="space-y-4 lg:space-y-6 text-base lg:text-lg text-muted-foreground leading-relaxed text-left">
               <p>
-                Scrapp develops smart waste programs for businesses, brands & 
+                zetrow develops smart waste programs for businesses, brands & 
                 retailers aiming to transition to zero waste. Through a 
-                comprehensive suite of digital tools, Scrapp is committed to educating 
+                comprehensive suite of digital tools, zetrow is committed to educating 
                 and empowering a world-wide community to embrace a circular 
                 economy.
               </p>
               
               <p>
-                Scrapp's data-driven approach offers a robust platform that guides 
+                zetrow's data-driven approach offers a robust platform that guides 
                 individuals, businesses, brands and retailers in proper disposal practices, 
                 supporting the vision of a more sustainable future.
               </p>

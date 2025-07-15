@@ -1,16 +1,18 @@
 import { Linkedin } from 'lucide-react';
+import teamCEO from '@/assets/team-ceo.jpg';
+import teamCofounder from '@/assets/team-cofounder.jpg';
 
 const teamMembers = [
   {
     name: "Evan Gwynne Davies",
     title: "Chief Executive Officer",
-    image: "/api/placeholder/300/300", // Placeholder for team member photo
+    image: teamCEO,
     linkedin: "#"
   },
   {
     name: "Mikey Pasciuto", 
     title: "Co-Founder",
-    image: "/api/placeholder/300/300", // Placeholder for team member photo
+    image: teamCofounder,
     linkedin: "#"
   }
 ];
@@ -35,10 +37,12 @@ const MeetTheTeamSection = () => {
               >
                 {/* Photo with LinkedIn overlay */}
                 <div className="relative group">
-                  <div className="aspect-square bg-primary/20 flex items-center justify-center">
-                    <div className="w-full h-full bg-gradient-to-br from-primary/30 to-secondary/30 flex items-center justify-center">
-                      <span className="text-muted-foreground text-sm">Team Member Photo</span>
-                    </div>
+                  <div className="aspect-square overflow-hidden">
+                    <img 
+                      src={member.image} 
+                      alt={member.name}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   
                   {/* LinkedIn Icon Overlay */}

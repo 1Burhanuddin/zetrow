@@ -12,7 +12,7 @@ const HowItStartedSection = () => {
           <div className="space-y-8 text-center">
             <div className="space-y-6 text-muted-foreground leading-relaxed text-lg">
               <p>
-                Scrapp was created to educate and empower people 
+                zetrow was created to educate and empower people 
                 to live more correctly.
               </p>
               
@@ -26,7 +26,7 @@ const HowItStartedSection = () => {
                 In the digital age, where data is the currency, there is 
                 a gap in information that could help the world 
                 transition to a circular economy. This is the societal 
-                model that will ensure nothing is wasted. Scrapp is the 
+                model that will ensure nothing is wasted. zetrow is the 
                 digital platform on a mission to make it happen.
               </p>
             </div>
@@ -41,12 +41,18 @@ const HowItStartedSection = () => {
               </a>
             </div>
 
-            {/* Placeholder for video/image */}
+            {/* Video content */}
             <div className="mt-12 bg-gradient-card rounded-2xl p-8 border border-border">
-              <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
-                <p className="text-muted-foreground">
-                  [Founder Video/Image Placeholder]
-                </p>
+              <div className="aspect-video bg-muted rounded-lg flex items-center justify-center relative overflow-hidden">
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg className="w-8 h-8 text-primary-foreground" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"/>
+                    </svg>
+                  </div>
+                  <h3 className="text-lg font-semibold text-foreground mb-2">Our Founder's Story</h3>
+                  <p className="text-muted-foreground text-sm">Watch how zetrow started and our vision for a sustainable future</p>
+                </div>
               </div>
             </div>
           </div>
