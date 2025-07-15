@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
-import zfLogo from '@/assets/zf-logo.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,7 +15,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <img 
-              src={zfLogo} 
+              src="/lovable-uploads/d560b72a-99ba-4751-b35c-9286ac2c4f7d.png" 
               alt="zetrow Logo" 
               className="h-8 w-8"
             />
