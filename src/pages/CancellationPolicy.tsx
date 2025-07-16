@@ -5,7 +5,7 @@ const CancellationPolicy = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <main className="container mx-auto px-4 py-8 max-w-4xl">
+      <main className="container mx-auto px-4 pt-24 pb-8 max-w-4xl">
         <div className="prose prose-lg max-w-none">
           <h1 className="text-4xl font-bold text-foreground mt-12">Cancellation Policy</h1>
           <div className="space-y-6 text-foreground">
