@@ -13,7 +13,7 @@ const Footer = () => {
             <div className="lg:col-span-2">
               <div className="flex items-center space-x-2 mb-6">
                 <img 
-                  src="zf-logo.png" 
+                  src="zflogo" 
                   alt="zetrow Logo" 
                   className="h-8 w-8"
                 />
