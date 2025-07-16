@@ -8,9 +8,6 @@ const TermsAndConditions = () => {
       <main className="container mx-auto px-4 py-8 max-w-4xl">
         <div className="prose prose-lg max-w-none">
           <h1 className="text-4xl font-bold text-foreground mb-8">Terms and Conditions</h1>
-          
-          <p className="text-muted-foreground mb-6">Last updated: July 15, 2025</p>
-          
           <div className="space-y-6 text-foreground">
             <p>
               Welcome to zetrow! These terms and conditions outline the rules and regulations for the use of zetrow's Website and Service, located at zetrow.com.

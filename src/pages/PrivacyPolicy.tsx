@@ -8,9 +8,6 @@ const PrivacyPolicy = () => {
       <main className="container mx-auto px-4 py-8 max-w-4xl">
         <div className="prose prose-lg max-w-none">
           <h1 className="text-4xl font-bold text-foreground mb-8">Privacy Policy</h1>
-          
-          <p className="text-muted-foreground mb-6">Last updated: July 15, 2025</p>
-          
           <div className="space-y-6 text-foreground">
             <p>
               This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.

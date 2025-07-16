@@ -1,4 +1,5 @@
 import { Smartphone, Download, Mail, MapPin, Phone } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import zfLogo from '@/assets/zf-logo.png';
 
 const Footer = () => {
@@ -111,15 +112,15 @@ const Footer = () => {
             </div>
             
             <div className="flex flex-wrap gap-6 text-sm">
-              <a href="#privacy" className="text-muted-foreground hover:text-foreground transition-colors">
+              <Link to="/privacy-policy" className="text-muted-foreground hover:text-foreground transition-colors">
                 Privacy Policy
-              </a>
-              <a href="#terms" className="text-muted-foreground hover:text-foreground transition-colors">
-                Terms of Use
-              </a>
-              <a href="#data" className="text-muted-foreground hover:text-foreground transition-colors">
-                Data Policy
-              </a>
+              </Link>
+              <Link to="/terms-and-conditions" className="text-muted-foreground hover:text-foreground transition-colors">
+                Terms & Conditions
+              </Link>
+              <Link to="/cancellation-policy" className="text-muted-foreground hover:text-foreground transition-colors">
+                Cancellation Policy
+              </Link>
             </div>
           </div>
         </div>
