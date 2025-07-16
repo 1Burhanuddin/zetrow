@@ -1,7 +1,7 @@
 import Header from '@/components/Header';
-import WhatIsScrappSection from '@/components/WhatIsScrappSection';
-import HowItStartedSection from '@/components/HowItStartedSection';
-import MeetTheTeamSection from '@/components/MeetTheTeamSection';
+import WhatIsScrappSection from '@/components/WhatIsScrapp';
+import HowItStartedSection from '@/components/HowItStarted';
+import MeetTheTeamSection from '@/components/Team';
 import FloatingActions from '@/components/FloatingActions';
 import Footer from '@/components/Footer';
 
