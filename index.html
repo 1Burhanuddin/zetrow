@@ -7,7 +7,13 @@
     <link rel="icon" href="/lovable-uploads/d560b72a-99ba-4751-b35c-9286ac2c4f7d.png" type="image/png" />
     <link rel="apple-touch-icon" href="/lovable-uploads/d560b72a-99ba-4751-b35c-9286ac2c4f7d.png" />
     <link rel="shortcut icon" href="/lovable-uploads/d560b72a-99ba-4751-b35c-9286ac2c4f7d.png" type="image/png" />
+    <link rel="manifest" href="/manifest.json" />
     <meta name="description" content="Join thousands of businesses making a positive environmental impact while earning the best rates for their recyclable materials with zetrow's innovative waste management platform." />
+    <meta name="theme-color" content="#22c55e" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="zetrow" />
     <meta name="author" content="zetrow" />
 
     <meta property="og:title" content="zetrow - Transform Waste Into Valuable Resources" />
@@ -23,5 +29,18 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then((registration) => {
+              console.log('SW registered: ', registration);
+            })
+            .catch((registrationError) => {
+              console.log('SW registration failed: ', registrationError);
+            });
+        });
+      }
+    </script>
   </body>
 </html>
