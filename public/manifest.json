@@ -9,13 +9,13 @@
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "/lovable-uploads/d560b72a-99ba-4751-b35c-9286ac2c4f7d.png",
+      "src": "/uploads/icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/lovable-uploads/d560b72a-99ba-4751-b35c-9286ac2c4f7d.png",
+      "src": "/uploads/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
