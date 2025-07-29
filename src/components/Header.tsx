@@ -16,7 +16,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
             <img 
-              src="/lovable-uploads/d560b72a-99ba-4751-b35c-9286ac2c4f7d.png" 
+              src="/uploads/d560b72a-99ba-4751-b35c-9286ac2c4f7d.png" 
               alt="zetrow Logo" 
               className="h-8 w-8"
             />

@@ -12,11 +12,11 @@ const Footer = () => {
             {/* Company Info */}
             <div className="lg:col-span-2">
               <div className="flex items-center space-x-2 mb-6">
-                <img 
-                  src="/lovable-uploads/d560b72a-99ba-4751-b35c-9286ac2c4f7d.png" 
-                  alt="zetrow Logo" 
-                  className="h-8 w-8"
-                />
+                            <img 
+              src="/uploads/d560b72a-99ba-4751-b35c-9286ac2c4f7d.png" 
+              alt="zetrow Logo" 
+              className="h-8 w-8"
+            />
                 <span className="text-2xl font-bold text-primary">zetrow</span>
               </div>
               <p className="text-muted-foreground mb-6 max-w-md">
@@ -122,6 +122,13 @@ const Footer = () => {
                 Cancellation Policy
               </Link>
             </div>
+          </div>
+          
+          {/* Delete Account Link - Centered */}
+          <div className="flex justify-center mt-4 pt-4 border-t border-border">
+            <Link to="/delete-account" className="text-red-600 hover:text-red-700 transition-colors text-sm font-medium">
+              Delete Account
+            </Link>
           </div>
         </div>
       </div>
