@@ -12,7 +12,7 @@ import TermsAndConditions from "./pages/TermsAndConditions";
 import CancellationPolicy from "./pages/CancellationPolicy";
 import DeleteAccount from "./pages/DeleteAccount";
 import Login from "./pages/Login";
-import WhyUs from "./pages/WhyUs";
+
 import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/Contact";
 import Careers from "./pages/Careers";
@@ -24,7 +24,7 @@ const AppContent = () => {
   return (
     <Routes>
       <Route path="/" element={<Index />} />
-      <Route path="/why-us" element={<WhyUs />} />
+      
       <Route path="/about-us" element={<AboutUs />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/careers" element={<Careers />} />
