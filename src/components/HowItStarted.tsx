@@ -1,16 +1,16 @@
 const HowItStartedSection = () => {
   return (
-    <section className="py-8 lg:py-12 bg-white">
+    <section className="py-8 lg:py-8 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           {/* Section Title */}
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-12 text-center">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-12 text-center pb-4 border-b-2">
             How it started?
           </h2>
 
           {/* Content */}
           <div className="space-y-8 text-center">
-            <div className="space-y-6 text-muted-foreground leading-relaxed text-lg">
+            <div className="space-y-6 text-muted-foreground  text-lg">
               <p>
                 zetrow was created to educate and empower people 
               </p>

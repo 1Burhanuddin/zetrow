@@ -2,7 +2,7 @@ const WhyChooseUsSection = () => (
   <section id="why-us" className="py-8 bg-white scroll-mt-20" style={{ scrollMarginTop: '80px' }}>
     <div className="container mx-auto px-4">
       <div className="text-center mb-16">
-        <h2 className="text-5xl font-bold text-gray-900 mb-6">Why Choose Zetrow?</h2>
+        <h2 className="text-5xl font-bold text-gray-900 mb-6 pb-4 border-b-2">Why Choose <span className="text-primary">Zetrow?</span></h2>
         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
           Discover what makes us the leading choice for sustainable waste management solutions.
         </p>
@@ -10,7 +10,7 @@ const WhyChooseUsSection = () => (
       <div className="grid lg:grid-cols-2 gap-12 mb-16">
         <div className="space-y-8">
           {/* Trust */}
-          <div className="rounded-lg shadow-lg p-8">
+          <div className="rounded-lg shadow-lg p-8 border-2 border-primary">
             <div className="flex items-center mb-4">
               <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
                 <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -24,7 +24,7 @@ const WhyChooseUsSection = () => (
             </p>
           </div>
           {/* Convenience */}
-          <div className="rounded-lg shadow-lg p-8">
+          <div className="rounded-lg shadow-lg p-8 border-2 border-primary">
             <div className="flex items-center mb-4">
               <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
                 <svg className="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -40,7 +40,7 @@ const WhyChooseUsSection = () => (
         </div>
         <div className="space-y-8">
           {/* Best Rates */}
-          <div className="bg-white rounded-lg shadow-lg p-8">
+          <div className="bg-white rounded-lg shadow-lg p-8 border-2 border-primary">
             <div className="flex items-center mb-4">
               <div className="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mr-4">
                 <svg className="w-8 h-8 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -54,7 +54,7 @@ const WhyChooseUsSection = () => (
             </p>
           </div>
           {/* Eco-friendly */}
-          <div className="bg-white rounded-lg shadow-lg p-8">
+          <div className="bg-white rounded-lg shadow-lg p-8 border-2 border-primary">
             <div className="flex items-center mb-4">
               <div className="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mr-4">
                 <svg className="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">

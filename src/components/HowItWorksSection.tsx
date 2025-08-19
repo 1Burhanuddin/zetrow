@@ -30,16 +30,16 @@ const HowItWorksSection = () => {
   return (
     <section id="how-it-works" className="py-16 bg-background">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">How it works</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 pb-4 border-b-2">How it works</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {steps.map((step, idx) => (
             <div
               key={step.title}
-              className="flex flex-col items-center bg-white rounded-xl shadow-lg p-8 transition-transform hover:scale-105"
+              className="flex flex-col items-center bg-primary text-white rounded-xl shadow-lg p-8 transition-transform hover:scale-105"
             >
               <div className="mb-6">{step.icon}</div>
-              <h3 className="text-xl font-semibold text-primary mb-2 text-center">{step.title}</h3>
-              <p className="text-center text-muted-foreground">{step.description}</p>
+              <h3 className="text-xl font-semibold text-white mb-2 text-center">{step.title}</h3>
+              <p className="text-center text-white">{step.description}</p>
             </div>
           ))}
         </div>

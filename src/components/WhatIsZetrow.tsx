@@ -2,7 +2,7 @@ import whatIsScrappIllustration from '@/assets/what-is-scrapp-illustration.png';
 
 const WhatIsZetrowSection = () => {
   return (
-    <section className="pt-20 pb-8 lg:pt-18 lg:pb-12 bg-white">
+    <section className="pt-20 pb-8 lg:pt-12 lg:pb-0 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-12 lg:items-center">
           {/* Text Content */}
