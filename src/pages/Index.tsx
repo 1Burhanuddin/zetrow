@@ -15,6 +15,7 @@ const Index = () => {
       <Header/>
       
       <main>
+
         <WhatIsZetrowSection />
         <HowItStartedSection />
         <HowItWorksSection />
