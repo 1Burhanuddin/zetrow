@@ -13,13 +13,13 @@ const Footer = () => {
             <div className="lg:col-span-2">
               <div className="flex items-center space-x-2 mb-6">
                 <img 
-                  src="/uploads/d560b72a-99ba-4751-b35c-9286ac2c4f7d.png" 
+                  src="/uploads/zetrow-logo.png" 
                   alt="zetrow Logo" 
                   className="h-8 w-8"
                 />
-                <span className="text-2xl font-bold text-primary">zetrow</span>
+                <span className="text-2xl font-bold text-primary">Zetrow</span>
               </div>
-              <p className="text-muted-foreground mb-6 max-w-md">
+              <p className=" mb-6 max-w-md">
                 Transforming the way businesses and people achieve their zero-waste goals.
               </p>
               
@@ -33,7 +33,7 @@ const Footer = () => {
                     <Smartphone className="h-5 w-5" />
                   </div>
                   <div className="text-left">
-                    <div className="text-xs text-muted-foreground">Download on the</div>
+                    <div className="text-xs ">Download on the</div>
                     <div className="text-sm font-semibold">App Store</div>
                   </div>
                 </a>
@@ -46,7 +46,7 @@ const Footer = () => {
                     <Download className="h-5 w-5 text-white" />
                   </div>
                   <div className="text-left">
-                    <div className="text-xs text-muted-foreground">Get it on</div>
+                    <div className="text-xs ">Get it on</div>
                     <div className="text-sm font-semibold">Google Play</div>
                   </div>
                 </a>
@@ -57,9 +57,9 @@ const Footer = () => {
             <div className="">
               <h3 className="text-lg font-semibold mb-4 text-primary">Company</h3>
               <ul className="space-y-3">
-                <li><Link to="/about-us" className="text-muted-foreground hover:text-foreground transition-colors">About Us</Link></li>
-                <li><Link to="/contact" className="text-muted-foreground hover:text-foreground transition-colors">Contact</Link></li>
-                <li><Link to="/careers" className="text-muted-foreground hover:text-foreground transition-colors">Careers</Link></li>
+                <li><Link to="/about-us" className=" hover:text-foreground transition-colors">About Us</Link></li>
+                <li><Link to="/contact" className=" hover:text-foreground transition-colors">Contact</Link></li>
+                <li><Link to="/careers" className=" hover:text-foreground transition-colors">Careers</Link></li>
               </ul>
             </div>
 
@@ -67,30 +67,30 @@ const Footer = () => {
             <div>
               {/* <h3 className="text-lg font-semibold mb-4 text-primary">Products</h3>
               <ul className="space-y-3 mb-6">
-                <li><a href="#business" className="text-muted-foreground hover:text-foreground transition-colors">For Business</a></li>
-                <li><a href="#brands-retailers" className="text-muted-foreground hover:text-foreground transition-colors">For Brands & Retailers</a></li>
-                <li><a href="#suppliers" className="text-muted-foreground hover:text-foreground transition-colors">For Suppliers</a></li>
-                <li><a href="#individuals" className="text-muted-foreground hover:text-foreground transition-colors">For Individuals</a></li>
-                <li><a href="#zero-waste" className="text-muted-foreground hover:text-foreground transition-colors">Zero-Waste Champions Program</a></li>
+                <li><a href="#business" className=" hover:text-foreground transition-colors">For Business</a></li>
+                <li><a href="#brands-retailers" className=" hover:text-foreground transition-colors">For Brands & Retailers</a></li>
+                <li><a href="#suppliers" className=" hover:text-foreground transition-colors">For Suppliers</a></li>
+                <li><a href="#individuals" className=" hover:text-foreground transition-colors">For Individuals</a></li>
+                <li><a href="#zero-waste" className=" hover:text-foreground transition-colors">Zero-Waste Champions Program</a></li>
               </ul> */}
 
               <h3 className="text-lg font-semibold mb-4 text-primary">Contact</h3>
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
                   <Mail className="h-4 w-4 text-primary" />
-                  <a href="mailto:info@zetrow.com" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+                  <a href="mailto:info@zetrow.com" className=" hover:text-foreground transition-colors text-sm">
                     info@zetrow.com
                   </a>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="h-4 w-4 text-primary" />
-                  <a href="tel:+917021825796" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+                  <a href="tel:+917021825796" className=" hover:text-foreground transition-colors text-sm">
                     +91 70218 25796
                   </a>
                 </div>
                 <div className="flex items-start space-x-3">
                   <MapPin className="h-4 w-4 text-primary mt-0.5" />
-                  <span className="text-muted-foreground text-sm">
+                  <span className=" text-sm">
                     SHOP NO 09 OM CHS LTD C WING RADHA GRAM SANTACRUZ,<br />
                     OPP NEHRU ROAD SANTACRUZ EAST,<br />
                     MUMBAI, Maharashtra, India 400055
@@ -104,18 +104,18 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-border py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div className="text-muted-foreground text-sm">
+            <div className=" text-sm">
               © 2025 Zetrow. All rights reserved.
             </div>
             
             <div className="flex flex-wrap gap-6 text-sm">
-              <Link to="/privacy-policy" className="text-muted-foreground hover:text-foreground transition-colors">
+              <Link to="/privacy-policy" className=" hover:text-foreground transition-colors">
                 Privacy Policy
               </Link>
-              <Link to="/terms-and-conditions" className="text-muted-foreground hover:text-foreground transition-colors">
+              <Link to="/terms-and-conditions" className=" hover:text-foreground transition-colors">
                 Terms & Conditions
               </Link>
-              <Link to="/cancellation-policy" className="text-muted-foreground hover:text-foreground transition-colors">
+              <Link to="/cancellation-policy" className=" hover:text-foreground transition-colors">
                 Cancellation Policy
               </Link>
             </div>

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const HowItStartedSection = () => {
   return (
     <section className="py-8 lg:py-8 bg-white">
@@ -10,12 +12,10 @@ const HowItStartedSection = () => {
 
           {/* Content */}
           <div className="space-y-8 text-center">
-            <div className="space-y-6 text-muted-foreground  text-lg">
+            <div className="space-y-6   text-lg">
               <p>
                 zetrow was created to educate and empower people 
-              </p>
               
-              <p>
                 But when we dug deeper into the issue, we found the 
                 problem is much larger than just putting things in the 
                 right bin.
@@ -32,12 +32,12 @@ const HowItStartedSection = () => {
 
             {/* Get in Touch Button */}
             <div className="pt-8">
-              <a 
-                href="#/contact" 
+              <Link 
+                to="/contact" 
                 className="inline-block bg-primary text-primary-foreground px-8 py-4 rounded-xl font-medium text-lg hover:shadow-medium transition-all duration-300 hover:scale-105"
               >
                 Get in Touch
-              </a>
+              </Link>
             </div>
 
             {/* Video content */}

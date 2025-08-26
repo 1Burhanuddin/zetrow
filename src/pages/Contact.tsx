@@ -8,12 +8,12 @@ const Contact: React.FC = () => {
       <Header />
       <main className="pt-16">
         <div className="min-h-screen bg-white">
-          <div className="container mx-auto px-4 py-16">
+          <div className="container mx-auto px-4 py-6">
             <div className="text-center mb-16">
-              <h1 className="text-5xl font-bold text-gray-900 mb-6">
+              <h1 className="text-5xl font-bold mb-6 border-b-2 p-2">
                 Contact Us
               </h1>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              <p className="text-xl mx-auto">
                 Get in touch with our team. We're here to help you with all your waste management needs.
               </p>
             </div>
@@ -24,14 +24,14 @@ const Contact: React.FC = () => {
                 <div className="bg-white rounded-lg shadow-lg p-8">
                   <h2 className="text-2xl font-bold mb-6">Get In Touch</h2>
                   <div className="space-y-6">
-                    <div className="flex items-center">
-                      <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                    <div className="flex items-start">
+                      <div className="w-12 h-12 bg-blue-100 rounded-full flex-shrink-0 flex items-center justify-center mr-4 mt-1">
                         <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                         </svg>
                       </div>
-                      <div>
+                      <div className="flex-1">
                         <h3 className="font-semibold">Address</h3>
                         <p className="text-gray-600">SHOP NO 09 OM CHS LTD C WING RADHA GRAM SANTACRUZ,<br />OPP NEHRU ROAD SANTACRUZ EAST,<br />MUMBAI, Maharashtra, India 400055</p>
                       </div>
@@ -45,7 +45,7 @@ const Contact: React.FC = () => {
                       </div>
                       <div>
                         <h3 className="font-semibold">Phone</h3>
-                        <p className="text-gray-600">+91 70218 25796<br />+91 90826 98271<br />+91 84220 40764</p>
+                        <p className="">+91 70218 25796<br />+91 90826 98271<br />+91 84220 40764</p>
                       </div>
                     </div>
 
@@ -74,7 +74,15 @@ const Contact: React.FC = () => {
                     </div>
                   </div>
                 </div>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.0095550817297!2d72.8404!3d19.1416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b7d7d9c9c9c9%3A0x9c9c9c9c9c9c9c9c!2sZetrow!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" 
+                    className="w-full h-64 border-2 border-gray-200 rounded-lg overflow-hidden" 
+                    allowFullScreen 
+                    loading="lazy"
+                    title="Zetrow Location"
+                  ></iframe>
               </div>
+              
 
               {/* Contact Form */}
               <div className="bg-white rounded-lg shadow-lg p-8">
@@ -158,18 +166,18 @@ const Contact: React.FC = () => {
             </div>
 
             {/* Map Section */}
-            <div className="mt-16 bg-white rounded-lg shadow-lg overflow-hidden">
-              <h2 className="text-2xl font-bold p-6 text-center">Find Us</h2>
+            {/* <div className="mt-8 bg-white rounded-lg shadow-lg overflow-hidden">
+              <h2 className="text-3xl font-bold p-6 text-center">Find Us</h2>
               <a 
                 href="https://maps.app.goo.gl/u85kjzy4Tfa1kuZa6" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="block hover:opacity-90 transition-opacity"
               >
-                <div className="relative pb-[56.25%] h-0 overflow-hidden">
+                <div className="relative pb-[56.25%] overflow-hidden">
                   <iframe 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.0095550817297!2d72.8404!3d19.1416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b7d7d9c9c9c9%3A0x9c9c9c9c9c9c9c9c!2sZetrow!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" 
-                    className="absolute top-0 left-0 w-full h-full border-0" 
+                    className="absolute top-0 left-0  border-0" 
                     allowFullScreen 
                     loading="lazy"
                     title="Zetrow Location"
@@ -179,7 +187,7 @@ const Contact: React.FC = () => {
                   <p className="text-blue-600 font-medium">View on Google Maps →</p>
                 </div>
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </main>

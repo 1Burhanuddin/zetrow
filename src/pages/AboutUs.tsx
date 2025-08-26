@@ -1,34 +1,35 @@
 import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import MeetTheTeamSection from '@/components/Team';
 
 const AboutUs: React.FC = () => {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      <main className="pt-16">
+      <main className="pt-8">
         <div className="min-h-screen bg-white">
-          <div className="container mx-auto px-4 py-16">
-            <div className="text-center mb-16">
-              <h1 className="text-5xl font-bold text-gray-900 mb-6">
-                About Zetrow
+          <div className="container mx-auto px-4 py-12">
+            <div className="text-center mb-2">
+              <h1 className="text-5xl font-bold mb-6 border-b-2 p-2">
+                About <span className="text-primary">Zetrow</span>
               </h1>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              <p className="text-xl  max-w-3xl mx-auto">
                 Pioneering sustainable waste management solutions for a cleaner, greener future.
               </p>
             </div>
 
             {/* Our Story */}
-            <div className="bg-white rounded-lg shadow-lg p-8 mb-16">
-              <h2 className="text-3xl font-bold text-center mb-8">Our Story</h2>
+            <div className="bg-white rounded-lg shadow-lg p-8 mb-6">
+              <h2 className="text-3xl font-bold text-left mb-8 ">Our Story</h2>
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div>
-                  <p className="text-lg text-gray-700 mb-6">
+                  <p className="text-lg mb-6">
                     Founded in 2025, Zetrow was born from a simple yet powerful vision: to make sustainable 
                     waste management accessible to everyone. What started as a small startup has 
                     grown into a leading force in environmental technology.
                   </p>
-                  <p className="text-lg text-gray-700 mb-6">
+                  <p className="text-lg mb-6">
                     Our founders, environmental engineers with decades of combined experience, recognized that 
                     traditional waste management systems were inefficient and environmentally harmful. They set 
                     out to create a solution that would not only solve these problems but also make businesses 
@@ -60,6 +61,8 @@ const AboutUs: React.FC = () => {
                 </div>
               </div>
             </div>
+            {/* {Meet the Team section} */}
+            <MeetTheTeamSection />
 
             {/* Our Values */}
             <div className="grid md:grid-cols-3 gap-8 mb-16">

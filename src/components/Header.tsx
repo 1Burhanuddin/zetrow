@@ -12,7 +12,6 @@ const Header = () => {
   const [mobileActive, setMobileActive] = useState<string | null>(null);
 const [desktopActive, setDesktopActive] = useState<string | null>(null);
 
-  // Track which section is visible
   const activeSection = useScrollSpy(['what-is-zetrow', 'how-it-started', 'why-choose-us', 'meet-the-team'], 80);
 
   useEffect(() => {
@@ -54,12 +53,12 @@ const [desktopActive, setDesktopActive] = useState<string | null>(null);
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
             <img 
-              src="/uploads/d560b72a-99ba-4751-b35c-9286ac2c4f7d.png" 
+              src="/uploads/zetrow-logo-removebg-preview.png" 
               alt="zetrow Logo" 
               className="h-8 w-8"
             />
             <span className={`text-xl font-bold transition-colors text-primary`}>
-              zetrow
+              Zetrow
             </span>
           </Link>
 
@@ -67,7 +66,7 @@ const [desktopActive, setDesktopActive] = useState<string | null>(null);
           <nav className="hidden md:flex items-center space-x-8">
             <Link 
               to="/" 
-              className={`transition-colors ${
+              className={`text-lg transition-colors ${
                 (desktopActive === 'home' || (isActive('home') && desktopActive !== 'whyus'))
                   ? 'text-primary font-semibold border-b-2 border-primary'
                   : 'text-foreground hover:text-primary'
@@ -82,7 +81,7 @@ const [desktopActive, setDesktopActive] = useState<string | null>(null);
                 setDesktopActive('whyus');
                 handleSectionNav(navigate, 'why-us');
               }}
-              className={`transition-colors bg-transparent border-0 px-0 ${
+              className={`text-lg transition-colors bg-transparent border-0 px-0 ${
                 desktopActive === 'whyus' || isActive('whyus')
                   ? 'text-primary font-semibold'
                   : 'text-foreground hover:text-primary'
@@ -96,12 +95,12 @@ const [desktopActive, setDesktopActive] = useState<string | null>(null);
               <button
                 onClick={toggleCompanyDropdown}
                 className={`flex items-center space-x-1 transition-colors ${
-                  location.pathname === '/about-us' || location.pathname === '/contact' || location.pathname === '/careers'
+                  location.pathname === '/about-us' || location.pathname === '/careers' || location.pathname === '/contact'
                     ? 'text-primary font-semibold'
                     : 'text-foreground hover:text-primary'
                 }`}
               >
-                <span>Company</span>
+                <span className="text-lg">Company</span>
                 <ChevronDown className={`h-4 w-4 transition-transform ${isCompanyDropdownOpen ? 'rotate-180' : ''}`} />
               </button>
               {isCompanyDropdownOpen && (
@@ -109,7 +108,7 @@ const [desktopActive, setDesktopActive] = useState<string | null>(null);
                   <div className="py-2">
                     <Link 
                       to="/about-us" 
-                      className={`block px-4 py-2 text-sm transition-colors ${
+                      className={`block px-4 py-2 text-lg transition-colors ${
                         location.pathname === '/about-us'
                           ? 'bg-primary/10 text-primary font-semibold'
                           : 'text-foreground hover:bg-muted hover:text-primary'
@@ -118,25 +117,25 @@ const [desktopActive, setDesktopActive] = useState<string | null>(null);
                       About Us
                     </Link>
                     <Link 
-                      to="/contact" 
-                      className={`block px-4 py-2 text-sm transition-colors ${
-                        location.pathname === '/contact'
-                          ? 'bg-primary/10 text-primary font-semibold'
-                          : 'text-foreground hover:bg-muted hover:text-primary'
-                      }`}
-                    >
-                      Contact
-                    </Link>
-                    <div className="border-t border-border my-1"></div>
-                    <Link 
                       to="/careers" 
-                      className={`block px-4 py-2 text-sm transition-colors ${
+                      className={`block px-4 py-2 text-lg transition-colors ${
                         location.pathname === '/careers'
                           ? 'bg-primary/10 text-primary font-semibold'
                           : 'text-foreground hover:bg-muted hover:text-primary'
                       }`}
                     >
                       Careers
+                    </Link>
+                    <div className="border-t border-border my-1"></div>
+                    <Link 
+                      to="/contact" 
+                      className={`block px-4 py-2 text-lg transition-colors ${
+                        location.pathname === '/contact'
+                          ? 'bg-primary/10 text-primary font-semibold'
+                          : 'text-foreground hover:bg-muted hover:text-primary'
+                      }`}
+                    >
+                      Contact
                     </Link>
                   </div>
                 </div>
@@ -162,7 +161,7 @@ const [desktopActive, setDesktopActive] = useState<string | null>(null);
             <nav className="flex flex-col items-start justify-start bg-white gap-4 space-y-6 w-full h-full p-6 rounded-xl">
               <Link 
                 to="/" 
-                className={`transition-colors ${
+                className={` transition-colors ${
                   (mobileActive === 'home' || (isActive('home') && mobileActive !== 'whyus'))
                     ? 'text-primary font-semibold'
                     : 'text-foreground hover:text-primary'
@@ -201,16 +200,6 @@ const [desktopActive, setDesktopActive] = useState<string | null>(null);
                 About Us
               </Link>
               <Link 
-                to="/contact" 
-                className={`transition-colors ${
-                  location.pathname === '/contact'
-                    ? 'text-primary font-semibold'
-                    : 'text-foreground hover:text-primary'
-                }`}
-              >
-                Contact
-              </Link>
-              <Link 
                 to="/careers" 
                 className={`transition-colors ${
                   location.pathname === '/careers'
@@ -219,6 +208,16 @@ const [desktopActive, setDesktopActive] = useState<string | null>(null);
                 }`}
               >
                 Careers
+              </Link>
+              <Link 
+                to="/contact" 
+                className={`transition-colors ${
+                  location.pathname === '/contact'
+                    ? 'text-primary font-semibold'
+                    : 'text-foreground hover:text-primary'
+                }`}
+              >
+                Contact 
               </Link>
               <a href="#download" className="bg-gradient-primary w-full text-primary-foreground px-6 py-3 rounded-lg font-medium text-center hover:shadow-medium transition-all duration-300">
                 Download App

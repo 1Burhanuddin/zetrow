@@ -15,6 +15,9 @@ const DeleteAccount = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [showLoginModal, setShowLoginModal] = useState(false);
+  const [loginUsername, setLoginUsername] = useState('');
+  const [loginPhone, setLoginPhone] = useState('');
+  const [loginLoading, setLoginLoading] = useState(false);
   const navigate = useNavigate();
   const { toast } = useToast();
 
@@ -201,28 +204,84 @@ const DeleteAccount = () => {
         </div>
       </main>
       <Footer />
+      
       <Dialog open={showLoginModal} onOpenChange={setShowLoginModal}>
-        <DialogContent className="max-w-md mx-auto rounded-xl border-0 shadow-2xl">
+        <DialogContent className="max-w-sm mx-auto rounded-xl border-0 shadow-2xl ">
           <DialogHeader className="space-y-4">
             <DialogTitle className="text-xl font-semibold text-center">
-              Login Required
+              Login Required <span className="text-red-600">*</span>
             </DialogTitle>
             <DialogDescription className="text-center text-muted-foreground">
-              You must be logged in to delete your account. Please login to continue.
+              You must login to continue.
             </DialogDescription>
           </DialogHeader>
-          <div className="flex flex-col space-y-4 pt-4">
-            <Button onClick={handleLoginClick} className="w-full bg-primary hover:bg-primary/90">
-              Login Now
-            </Button>
-            <Button 
-              onClick={() => setShowLoginModal(false)} 
-              variant="outline" 
-              className="w-full"
-            >
-              Cancel
-            </Button>
-          </div>
+          <form
+            className="space-y-4 pt-2"
+            onSubmit={async (e) => {
+              e.preventDefault();
+              setLoginLoading(true);
+              // Simple demo auth logic, replace with real API call
+              if (!loginUsername || !loginPhone) {
+                toast({ title: 'Error', description: 'Please enter both fields', variant: 'destructive' });
+                setLoginLoading(false);
+                return;
+              }
+              // Simulate auth success
+              localStorage.setItem('authToken', 'demo-token');
+              localStorage.setItem('userId', loginUsername);
+              localStorage.setItem('userEmail', loginPhone);
+              setIsAuthenticated(true);
+              setShowLoginModal(false);
+              setLoginLoading(false);
+              toast({ title: 'Login Success', description: 'You are now logged in.' });
+            }}
+          >
+            <div className="space-y-2">
+              <Label htmlFor="login-username" className="text-sm font-medium text-gray-700">
+                Username
+              </Label>
+              <Input
+                id="login-username"
+                type="text"
+                placeholder="Enter your username"
+                value={loginUsername}
+                onChange={e => setLoginUsername(e.target.value)}
+                className="w-full"
+                autoFocus
+              />
+            </div>
+            <div className="space-y-2">
+              <Label htmlFor="login-phone" className="text-sm font-medium text-gray-700">
+                Phone Number
+              </Label>
+              <Input
+                id="login-phone"
+                type="tel"
+                placeholder="Enter your phone number"
+                value={loginPhone}
+                onChange={e => setLoginPhone(e.target.value)}
+                className="w-full"
+              />
+            </div>
+            <div className="flex gap-4 pt-2">
+              <Button
+                type="button"
+                variant="outline"
+                className="w-full hover:bg-primary"
+                onClick={() => setShowLoginModal(false)}
+                disabled={loginLoading}
+              >
+                Cancel
+              </Button>
+              <Button
+                type="submit"
+                className="w-full bg-primary hover:bg-primary border-0 text-white py-3"
+                disabled={loginLoading}
+              >
+                {loginLoading ? 'Logging in...' : 'Login'}
+              </Button>
+            </div>
+          </form>
         </DialogContent>
       </Dialog>
     </div>

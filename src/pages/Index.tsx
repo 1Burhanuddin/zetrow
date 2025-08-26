@@ -15,12 +15,12 @@ const Index = () => {
       <Header/>
       
       <main>
-
+    
         <WhatIsZetrowSection />
         <HowItStartedSection />
         <HowItWorksSection />
         <WhyChooseUsSection />
-        <MeetTheTeamSection />
+        {/* <MeetTheTeamSection /> */}
       </main>
       <FloatingActions />
       <Footer />

@@ -3,7 +3,7 @@ import { CheckCircle } from 'lucide-react';
 
 const steps = [
   {
-    title: 'Schedule a pickup',
+    title: 'Instant Pickup',
     description: 'Book a convenient time for us to collect your items.',
     icon: (
      <img src="https://ikp.edgekit.net/y8s2vhk66ef/undraw_Online_calendar_re_wk3t_1_SHrgqjm1w6l.png?updatedAt=1628624813421" alt="" />
@@ -30,7 +30,7 @@ const HowItWorksSection = () => {
   return (
     <section id="how-it-works" className="py-16 bg-background">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 pb-4 border-b-2">How it works</h2>
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-12 pb-4 border-b-2">How it works</h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {steps.map((step, idx) => (
             <div

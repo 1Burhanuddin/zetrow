@@ -4,16 +4,16 @@ import Footer from '@/components/Footer';
 
 const Careers: React.FC = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-white">
       <Header />
       <main className="pt-16">
-        <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-50">
+        <div className="min-h-screen bg-white">
           <div className="container mx-auto px-4 py-16">
             <div className="text-center mb-16">
-              <h1 className="text-5xl font-bold text-gray-900 mb-6">
-                Careers at Zetrow
+              <h1 className="text-5xl font-bold text-gray-900 mb-6 border-b-2 p-2">
+                Careers at <span className="text-primary">Zetrow</span>
               </h1>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              <p className="text-xl text-gray-600 mx-auto">
                 Join our mission to create a sustainable future through innovative waste management solutions.
               </p>
             </div>
