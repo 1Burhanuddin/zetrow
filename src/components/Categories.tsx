@@ -12,6 +12,13 @@ const Categories = () => {
   return (
     <section className="py-12 bg-white">
       <div className="container mx-auto px-4">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-bold text-gray-900 mb-4 border-b-2 p-4">Our Category / Services</h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Zetrow: Every scrap solution from household to demolition - Total control
+          </p>
+        </div>
+        
         <div className="flex flex-wrap justify-center gap-4 md:gap-6 lg:gap-8">
           {categories.map((category) => (
             <div key={category.id} className="w-full object-contain overflow-hidden rounded-lg shadow-lg transition-shadow duration-300 hover:border-2 border-primary">
