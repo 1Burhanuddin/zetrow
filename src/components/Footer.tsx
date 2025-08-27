@@ -60,6 +60,7 @@ const Footer = () => {
                 <li><Link to="/about-us" className=" hover:text-foreground transition-colors">About Us</Link></li>
                 <li><Link to="/contact" className=" hover:text-foreground transition-colors">Contact</Link></li>
                 <li><Link to="/careers" className=" hover:text-foreground transition-colors">Careers</Link></li>
+                <li><Link to="/faq" className=" hover:text-foreground transition-colors">FAQ</Link></li>
               </ul>
             </div>
 
@@ -75,25 +76,32 @@ const Footer = () => {
               </ul> */}
 
               <h3 className="text-lg font-semibold mb-4 text-primary">Contact</h3>
+
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
                   <Mail className="h-4 w-4 text-primary" />
-                  <a href="mailto:info@zetrow.com" className=" hover:text-foreground transition-colors text-sm">
-                    info@zetrow.com
+                  <a href="mailto:zetrowservices@gmail.com" className=" hover:text-foreground transition-colors text-sm">
+                    zetrowservices@gmail.com
                   </a>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="h-4 w-4 text-primary" />
-                  <a href="tel:+917021825796" className=" hover:text-foreground transition-colors text-sm">
+                  <a href="tel:+919082698271" className="hover:text-foreground transition-colors text-sm">
+                    +91 90826 98271
+                  </a>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Phone className="h-4 w-4 text-primary" />
+                  <a href="tel:+917021825796" className="hover:text-foreground transition-colors text-sm">
                     +91 70218 25796
                   </a>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <MapPin className="h-4 w-4 text-primary mt-0.5" />
+                  <MapPin className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
                   <span className=" text-sm">
                     SHOP NO 09 OM CHS LTD C WING RADHA GRAM SANTACRUZ,<br />
                     OPP NEHRU ROAD SANTACRUZ EAST,<br />
-                    MUMBAI, Maharashtra, India 400055
+                    MUMBAI, MAHARASHTRA, INDIA 400055
                   </span>
                 </div>
               </div>

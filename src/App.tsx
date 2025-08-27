@@ -16,6 +16,7 @@ import Login from "./pages/Login";
 import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/Contact";
 import Careers from "./pages/Careers";
+import FAQ from "./pages/FAQ";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +29,7 @@ const AppContent = () => {
       <Route path="/about-us" element={<AboutUs />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/careers" element={<Careers />} />
+      <Route path="/faq" element={<FAQ />} />
       <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
       <Route path="/cancellation-policy" element={<CancellationPolicy />} />

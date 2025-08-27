@@ -1,9 +1,57 @@
 import { MessageCircle, Phone } from 'lucide-react';
+import { useEffect, useState } from 'react';
 
 const FloatingActions = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const [isLargeScreen, setIsLargeScreen] = useState(false);
+
+  useEffect(() => {
+    // Check screen size on mount and resize
+    const checkScreenSize = () => {
+      setIsLargeScreen(window.innerWidth >= 1024);
+    };
+    
+    // Initial check
+    checkScreenSize();
+    
+    // Add event listener for resize
+    window.addEventListener('resize', checkScreenSize);
+    
+    // Cleanup
+    return () => window.removeEventListener('resize', checkScreenSize);
+  }, []);
+
+  useEffect(() => {
+    if (!isLargeScreen) {
+      // Always show on mobile
+      setIsVisible(true);
+      return;
+    }
+
+    const handleScroll = () => {
+      const footer = document.querySelector('footer');
+      if (!footer) return;
+      
+      const footerPosition = footer.getBoundingClientRect().top;
+      const screenHeight = window.innerHeight;
+      
+      // Show buttons when footer is in view (with 200px offset)
+      setIsVisible(footerPosition <= screenHeight - 200);
+    };
+
+    // Initial check
+    handleScroll();
+    
+    // Add scroll event listener
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    
+    // Cleanup
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [isLargeScreen]);
+
   const handleWhatsAppClick = () => {
     // Using the primary business number for WhatsApp
-    const phoneNumber = '917021825796';
+    const phoneNumber = '919082698271';
     const message = 'Hi! I\'m interested in learning more about zetrow\'s services.';
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
@@ -13,6 +61,8 @@ const FloatingActions = () => {
     // Using the primary business number for calls
     window.location.href = 'tel:+917021825796';
   };
+
+  if (!isVisible) return null;
 
   return (
     <div className="fixed bottom-6 right-6 flex flex-col gap-3 z-40">

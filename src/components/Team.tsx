@@ -4,22 +4,22 @@ import teamCofounder from '@/assets/team-cofounder.jpg';
 
 const teamMembers = [
   {
-    name: "Maaz Nasimuddin Khan",
+    name: "Maaz Khan",
     title: "Founder",
     image: teamCEO,
-    linkedin: "#"
+    linkedin: "https://www.linkedin.com/in/maaz-khan-110b81227?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
   },
   {
-    name: "Farhan Nihal Khan", 
+    name: "Farhan Khan", 
     title: "Founder",
     image: teamCofounder,
     linkedin: "#"
   },
   {
-    name: "Abusaad Atikullah Khan", 
+    name: "Abusaad Khan", 
     title: "Co-Founder",
     image: teamCofounder,
-    linkedin: "#"
+    linkedin: "https://www.linkedin.com/in/abusaad-khan-9b19521a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
   }
 ];
 
@@ -55,6 +55,8 @@ const MeetTheTeamSection = () => {
                   <div className="absolute top-4 left-4">
                     <a 
                       href={member.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="w-8 h-8 bg-[#0077B5] text-white rounded flex items-center justify-center hover:scale-110 transition-transform"
                     >
                       <Linkedin className="h-4 w-4" />

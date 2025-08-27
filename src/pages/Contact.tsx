@@ -33,7 +33,7 @@ const Contact: React.FC = () => {
                       </div>
                       <div className="flex-1">
                         <h3 className="font-semibold">Address</h3>
-                        <p className="text-gray-600">SHOP NO 09 OM CHS LTD C WING RADHA GRAM SANTACRUZ,<br />OPP NEHRU ROAD SANTACRUZ EAST,<br />MUMBAI, Maharashtra, India 400055</p>
+                        <p className="text-gray-600">SHOP NO 09 OM CHS LTD C WING RADHA GRAM SANTACRUZ,<br />OPP NEHRU ROAD SANTACRUZ EAST,<br />MUMBAI, MAHARASHTRA, INDIA 400055</p>
                       </div>
                     </div>
 
@@ -57,7 +57,7 @@ const Contact: React.FC = () => {
                       </div>
                       <div>
                         <h3 className="font-semibold">Email</h3>
-                        <p className="text-gray-600">info@zetrow.com</p>
+                        <p className="text-gray-600">zetrowservices@gmail.com</p>
                       </div>
                     </div>
 

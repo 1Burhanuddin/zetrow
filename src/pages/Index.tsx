@@ -3,11 +3,9 @@ import WhatIsZetrowSection from '@/components/WhatIsZetrow';
 import HowItStartedSection from '@/components/HowItStarted';
 import HowItWorksSection from '@/components/HowItWorksSection';
 import WhyChooseUsSection from '@/components/WhyUs';
-import MeetTheTeamSection from '@/components/Team';
+import Categories from '@/components/Categories';
 import FloatingActions from '@/components/FloatingActions';
 import Footer from '@/components/Footer';
-
-
 
 const Index = () => {
   return (
@@ -15,12 +13,11 @@ const Index = () => {
       <Header/>
       
       <main>
-    
         <WhatIsZetrowSection />
         <HowItStartedSection />
-        <HowItWorksSection />
+        <Categories />
         <WhyChooseUsSection />
-        {/* <MeetTheTeamSection /> */}
+        <HowItWorksSection />
       </main>
       <FloatingActions />
       <Footer />
