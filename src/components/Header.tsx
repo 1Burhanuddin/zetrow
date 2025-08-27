@@ -126,7 +126,19 @@ const [desktopActive, setDesktopActive] = useState<string | null>(null);
                     >
                       Careers
                     </Link>
+                    <Link 
+                      to="/faq" 
+                      className={`block px-4 py-2 text-lg transition-colors ${
+                        location.pathname === '/faq'
+                          ? 'bg-primary/10 text-primary font-semibold'
+                          : 'text-foreground hover:bg-muted hover:text-primary'
+                      }`}
+                    >
+                      FAQ
+                    </Link>
+                    
                     <div className="border-t border-border my-1"></div>
+                    
                     <Link 
                       to="/contact" 
                       className={`block px-4 py-2 text-lg transition-colors ${
@@ -198,6 +210,16 @@ const [desktopActive, setDesktopActive] = useState<string | null>(null);
                 }`}
               >
                 About Us
+              </Link>
+              <Link 
+                to="/faq" 
+                className={`transition-colors ${
+                  location.pathname === '/faq'
+                    ? 'text-primary font-semibold'
+                    : 'text-foreground hover:text-primary'
+                }`}
+              >
+                FAQ
               </Link>
               <Link 
                 to="/careers" 
