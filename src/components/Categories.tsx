@@ -1,16 +1,50 @@
-import React from 'react';
 
 const Categories = () => {
   const categories = [
-    { id: 1, image: '/images/category/1.jpeg', alt: 'Category 1' },
-    { id: 2, image: '/images/category/2.jpeg', alt: 'Category 2' },
-    { id: 3, image: '/images/category/3.jpeg', alt: 'Category 3' },
-    { id: 4, image: '/images/category/4.jpeg', alt: 'Category 4' },
-    { id: 5, image: '/images/category/5.jpeg', alt: 'Category 5' },
+    {
+      id: 1,
+      title: 'Household Scrap',
+      description: 'Old appliances, bottles, papers & plastics — we recycle it all from your home.',
+      image: '/images/category/1.jpeg',
+      alt: 'Household Scrap',
+      icon: '🏠'
+    },
+    {
+      id: 2,
+      title: 'Commercial/Corporate Scrap',
+      description: 'From offices to retail spaces, we handle bulk scrap responsibly and on-time.',
+      image: '/images/category/2.jpeg',
+      alt: 'Commercial Scrap',
+      icon: '🏢'
+    },
+    {
+      id: 3,
+      title: 'Industrial Scrap',
+      description: 'Heavy metals, machinery, and production waste collected with transparency.',
+      image: '/images/category/3.jpeg',
+      alt: 'Industrial Scrap',
+      icon: '🏭'
+    },
+    {
+      id: 4,
+      title: 'Vehicle Scrap',
+      description: 'Cars, bikes, batteries & spare parts — safe and certified vehicle recycling.',
+      image: '/images/category/4.jpeg',
+      alt: 'Vehicle Scrap',
+      icon: '🚗'
+    },
+    {
+      id: 5,
+      title: 'Demolition Scrap',
+      description: 'We handle the safe removal and recycling of demolition materials.',
+      image: '/images/category/5.jpeg',
+      alt: 'Demolition Scrap',
+      icon: '🏗️'
+    },
   ];
 
   return (
-    <section className="py-12 bg-white">
+    <section className="py-12 ">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 mb-4 border-b-2 p-4">Our Category / Services</h2>
@@ -18,14 +52,17 @@ const Categories = () => {
             Zetrow: Every scrap solution from household to demolition - Total control
           </p>
         </div>
-        
-        <div className="flex flex-wrap justify-center gap-4 md:gap-6 lg:gap-8">
+
+        <div className="space-y-4 md:space-y-6">
           {categories.map((category) => (
-            <div key={category.id} className="w-full object-contain overflow-hidden rounded-lg shadow-lg transition-shadow duration-300 hover:border-2 border-primary">
-              <img 
-                src={category.image} 
-                alt={category.alt} 
-                className="w-full object-contain hover:scale-105 transition-transform duration-300"
+            <div
+              key={category.id}
+              className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-emerald-200"
+            >
+              <img
+                src={category.image}
+                alt={category.alt}
+                className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-300"
                 loading="lazy"
               />
             </div>
