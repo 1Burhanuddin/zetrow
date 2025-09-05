@@ -47,7 +47,20 @@ const Categories = () => {
           </p>
         </div>
 
-        <div className="space-y-4 md:space-y-6">
+        {/* Mobile: Single image */}
+        <div className="block md:hidden">
+          <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-emerald-200">
+            <img
+              src="images/category/category-mobile.jpg"
+              alt="All Categories"
+              className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+              loading="lazy"
+            />
+          </div>
+        </div>
+
+        {/* Desktop: 5 images stacked */}
+        <div className="hidden md:block space-y-4 md:space-y-6">
           {categories.map((category) => (
             <div
               key={category.id}
@@ -56,7 +69,7 @@ const Categories = () => {
               <img
                 src={category.image}
                 alt={category.alt}
-                className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-300"
+                className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
                 loading="lazy"
               />
             </div>
