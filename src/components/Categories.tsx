@@ -3,43 +3,37 @@ const Categories = () => {
   const categories = [
     {
       id: 1,
-      title: 'Household Scrap',
-      description: 'Old appliances, bottles, papers & plastics — we recycle it all from your home.',
+      
       image: '/images/category/1.jpeg',
       alt: 'Household Scrap',
-      icon: '🏠'
     },
     {
       id: 2,
-      title: 'Commercial/Corporate Scrap',
-      description: 'From offices to retail spaces, we handle bulk scrap responsibly and on-time.',
+      
       image: '/images/category/2.jpeg',
       alt: 'Commercial Scrap',
-      icon: '🏢'
+     
     },
     {
       id: 3,
-      title: 'Industrial Scrap',
-      description: 'Heavy metals, machinery, and production waste collected with transparency.',
+      
       image: '/images/category/3.jpeg',
       alt: 'Industrial Scrap',
-      icon: '🏭'
+      
     },
     {
       id: 4,
-      title: 'Vehicle Scrap',
-      description: 'Cars, bikes, batteries & spare parts — safe and certified vehicle recycling.',
+      
       image: '/images/category/4.jpeg',
       alt: 'Vehicle Scrap',
-      icon: '🚗'
+      
     },
     {
       id: 5,
-      title: 'Demolition Scrap',
-      description: 'We handle the safe removal and recycling of demolition materials.',
+      
       image: '/images/category/5.jpeg',
       alt: 'Demolition Scrap',
-      icon: '🏗️'
+      
     },
   ];
 
