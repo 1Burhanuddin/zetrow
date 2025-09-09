@@ -38,18 +38,18 @@ const Categories = () => {
   ];
 
   return (
-    <section className="py-12 ">
-      <div className="container mx-auto px-4">
+    <section className="py-1 ">
+      <div className=" mx-auto px-">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4 border-b-2 p-4">Our Category / Services</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <h2 className="text-4xl font-bold text-gray-900 mb-4 border-b-2 m-2 p-4">Our Category / Services</h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto px-4">
             Zetrow: Every scrap solution from household to demolition - Total control
           </p>
         </div>
 
         {/* Mobile: Single image */}
         <div className="block md:hidden">
-          <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-primary-200">
+          <div className="shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-primary-200">
             <img
               src="images/category/category-mobile.jpg"
               alt="All Categories"
@@ -77,6 +77,8 @@ const Categories = () => {
         </div>
       </div>
     </section>
+        
+
   );
 };
 

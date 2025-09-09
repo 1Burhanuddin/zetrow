@@ -17,7 +17,7 @@ const WhyChooseUsSection = () => (
             <div className="flex-1 text-center">
               <h3 className="text-2xl font-semibold mb-2">Trust</h3>
               <p className="text-gray-700">
-                Trained & Verified Pickup Staff with Swapeco Smart Weighing Scale
+                Trained & Verified Pickup Staff with Smart Weighing Scale
               </p>
             </div>
           </div>
