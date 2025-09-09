@@ -3,37 +3,37 @@ const Categories = () => {
   const categories = [
     {
       id: 1,
-      
+
       image: '/images/category/1.jpeg',
       alt: 'Household Scrap',
     },
     {
       id: 2,
-      
+
       image: '/images/category/2.jpeg',
       alt: 'Commercial Scrap',
-     
+
     },
     {
       id: 3,
-      
+
       image: '/images/category/3.jpeg',
       alt: 'Industrial Scrap',
-      
+
     },
     {
       id: 4,
-      
+
       image: '/images/category/4.jpeg',
       alt: 'Vehicle Scrap',
-      
+
     },
     {
       id: 5,
-      
+
       image: '/images/category/5.jpeg',
       alt: 'Demolition Scrap',
-      
+
     },
   ];
 
@@ -49,11 +49,11 @@ const Categories = () => {
 
         {/* Mobile: Single image */}
         <div className="block md:hidden">
-          <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-emerald-200">
+          <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-primary-200">
             <img
               src="images/category/category-mobile.jpg"
               alt="All Categories"
-              className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+              className="w-full h-full object-cover "
               loading="lazy"
             />
           </div>
@@ -64,12 +64,12 @@ const Categories = () => {
           {categories.map((category) => (
             <div
               key={category.id}
-              className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-emerald-200"
+              className="bg-white rounded-2xl shadow-lg hover:shadow-xl overflow-hidden border border-gray-100 hover:border-primary hover:border-4 transition-all duration-300"
             >
               <img
                 src={category.image}
                 alt={category.alt}
-                className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+                className="w-full h-64 object-cover transition-all duration-300"
                 loading="lazy"
               />
             </div>
