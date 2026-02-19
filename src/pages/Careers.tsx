@@ -30,19 +30,24 @@ const Careers: React.FC = () => {
                   Not Hiring Currently
                 </h2>
                 <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-                  We're currently not accepting new applications, but we're always looking for talented individuals 
+                  We're currently not accepting new applications, but we're always looking for talented individuals
                   who are passionate about environmental sustainability and technology innovation.
                 </p>
                 <div className="bg-green-50 border border-green-200 rounded-lg p-6">
                   <h3 className="text-xl font-semibold text-green-800 mb-3">Stay Connected</h3>
                   <p className="text-green-700 mb-4">
-                    Follow us on LinkedIn and check back regularly for future opportunities. We'll post new positions 
+                    Follow us on LinkedIn and check back regularly for future opportunities. We'll post new positions
                     as they become available.
                   </p>
                   <div className="flex justify-center">
-                    <button className="bg-green-500 text-white px-6 py-2 rounded-lg hover:bg-green-600 transition-colors">
+                    <a
+                      href="https://www.linkedin.com/company/zetrow/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-green-500 text-white px-6 py-2 rounded-lg hover:bg-green-600 transition-colors inline-block"
+                    >
                       Follow on LinkedIn
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>

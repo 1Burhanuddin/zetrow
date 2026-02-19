@@ -1,4 +1,4 @@
-import { Smartphone, Download, Mail, MapPin, Phone } from 'lucide-react';
+import { Smartphone, Download, Mail, MapPin, Phone, Facebook, Instagram, Linkedin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import zfLogo from '@/assets/zf-logo.png';
 
@@ -12,9 +12,9 @@ const Footer = () => {
             {/* Company Info */}
             <div className="lg:col-span-2">
               <div className="flex items-center space-x-2 mb-6">
-                <img 
-                  src="/uploads/zetrow-logo.png" 
-                  alt="zetrow Logo" 
+                <img
+                  src="/uploads/zetrow-logo.png"
+                  alt="zetrow Logo"
                   className="h-8 w-8"
                 />
                 <span className="text-2xl font-bold text-primary">Zetrow</span>
@@ -22,11 +22,11 @@ const Footer = () => {
               <p className=" mb-6 max-w-md">
                 Transforming the way businesses and people achieve their zero-waste goals.
               </p>
-              
+
               {/* App Download Buttons */}
               <div className="flex flex-col sm:flex-row gap-3 mb-6">
-                <a 
-                  href="#" 
+                <a
+                  href="#"
                   className="bg-foreground text-background px-4 py-3 rounded-lg flex items-center space-x-3 hover:bg-foreground/90 transition-colors group"
                 >
                   <div className="w-8 h-8 bg-background text-foreground rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
@@ -37,9 +37,9 @@ const Footer = () => {
                     <div className="text-sm font-semibold">App Store</div>
                   </div>
                 </a>
-                
-                <a 
-                  href="#" 
+
+                <a
+                  href="#"
                   className="bg-foreground text-background px-4 py-3 rounded-lg flex items-center space-x-3 hover:bg-foreground/90 transition-colors group"
                 >
                   <div className="w-8 h-8 bg-gradient-to-br from-yellow-400 via-green-500 to-blue-500 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
@@ -49,6 +49,37 @@ const Footer = () => {
                     <div className="text-xs ">Get it on</div>
                     <div className="text-sm font-semibold">Google Play</div>
                   </div>
+                </a>
+              </div>
+
+              {/* Social Media Links */}
+              <div className="flex space-x-4">
+                <a
+                  href="https://www.linkedin.com/company/zetrow/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-background p-2 rounded-full border border-border hover:border-primary hover:text-primary transition-colors duration-300"
+                  aria-label="LinkedIn"
+                >
+                  <Linkedin className="h-5 w-5" />
+                </a>
+                <a
+                  href="https://www.instagram.com/zetrownow?igsh=MWZ3ZXhpbnNveXV6Yw%3D%3D&utm_source=qr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-background p-2 rounded-full border border-border hover:border-primary hover:text-primary transition-colors duration-300"
+                  aria-label="Instagram"
+                >
+                  <Instagram className="h-5 w-5" />
+                </a>
+                <a
+                  href="https://www.facebook.com/share/1Au83JLM7z/?mibextid=wwXIfr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-background p-2 rounded-full border border-border hover:border-primary hover:text-primary transition-colors duration-300"
+                  aria-label="Facebook"
+                >
+                  <Facebook className="h-5 w-5" />
                 </a>
               </div>
             </div>
@@ -115,7 +146,7 @@ const Footer = () => {
             <div className=" text-sm">
               © 2025 Zetrow. All rights reserved.
             </div>
-            
+
             <div className="flex flex-wrap gap-6 text-sm">
               <Link to="/privacy-policy" className=" hover:text-foreground transition-colors">
                 Privacy Policy
@@ -128,7 +159,7 @@ const Footer = () => {
               </Link>
             </div>
           </div>
-          
+
           {/* Delete Account Link - Centered */}
           <div className="flex justify-center mt-4 pt-4 border-t border-border">
             <Link to="/delete-account" className="text-red-600 hover:text-red-700 transition-colors text-sm font-medium">
